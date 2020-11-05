@@ -10,8 +10,8 @@ import os as os
 input_path='D:\\Jacob-Lab\\github\\Combined_recurrence_table\\inputs'
 output_path='D:\\Jacob-Lab\\github\\Combined_recurrence_table\\outputs'
 
-snv_recurrence = pd.read_excel("D:\\Jacob-Lab\\github\\SNV_recurrence_analysis_tool\\outputs\\germline_snv_VaraintBasedArray.xlsx", index_col="Idx")
-sv_recurrence = pd.read_excel("D:\\Jacob-Lab\\github\\StructureVariant_recurrence_analysis\\outputs\\germline_sv_VaraintBasedArray.xlsx", index_col="Idx")
+snv_recurrence = pd.read_excel('{}'.format(input_path) + "\\germline_snv_VaraintBasedArray.xlsx", index_col="Idx")
+sv_recurrence = pd.read_excel('{}'.format(input_path) + "\\germline_sv_VaraintBasedArray.xlsx", index_col="Idx")
 
 # change the directory
 os.chdir('{}'.format(input_path))
